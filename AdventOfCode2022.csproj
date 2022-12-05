@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Input\" />
+    <None Remove="Days\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Input\" />
+    <Folder Include="Days\" />
   </ItemGroup>
 </Project>
