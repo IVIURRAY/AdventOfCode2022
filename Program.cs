@@ -13,5 +13,8 @@ internal class Program
 
         Console.WriteLine("Day3 PartOne = " + Day3.PartOne()); // 7746
         Console.WriteLine("Day3 PartTwo = " + Day3.PartTwo()); // 2604
+
+        Console.WriteLine("Day4 PartOne = " + Day4.PartOne()); // 466
+        Console.WriteLine("Day3 PartTwo = " + Day4.PartTwo()); // 865
     }
 }
