@@ -15,9 +15,7 @@ public class Day3
         // Find matching char in each half of string
 
         // Read in file
-        List<string> data = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day3.txt"))
-           .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
-           .ToList();
+        List<string> data = Utilites.GetFileLines("Day3.txt");
 
         int sumOfDups = 0;
         // Each line split into two halfs
@@ -37,9 +35,7 @@ public class Day3
         // Find the matching char in chunks of three.
 
         // Read in file
-        List<string> data = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day3.txt"))
-           .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
-           .ToList();
+        List<string> data = Utilites.GetFileLines("Day3.txt");
 
         int sumOfDups = 0;
         for(int i = 0; i < data.Capacity; i+=3) 

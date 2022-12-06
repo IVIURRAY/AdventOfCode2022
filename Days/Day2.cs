@@ -57,11 +57,10 @@ public class Day2
 	{
 
 
-        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day2.txt"))
-            .Split("\n", StringSplitOptions.RemoveEmptyEntries)
-			.ToList();
+        List<string> data = Utilites.GetFileLines("Day2.txt");
 
-		int score = 0;
+
+        int score = 0;
         foreach (string line in data) {
             score += PlayGame(line[0], line[2]);
         }
@@ -119,9 +118,7 @@ public class Day2
 
     public static int PartTwo()
     {
-        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day2.txt"))
-            .Split("\n", StringSplitOptions.RemoveEmptyEntries)
-            .ToList();
+        List<string> data = Utilites.GetFileLines("Day2.txt");
 
         int score = 0;
         foreach (string line in data)
