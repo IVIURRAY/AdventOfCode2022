@@ -57,7 +57,7 @@ public class Day2
 	{
 
 
-        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Day2.txt"))
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day2.txt"))
             .Split("\n", StringSplitOptions.RemoveEmptyEntries)
 			.ToList();
 
@@ -119,7 +119,7 @@ public class Day2
 
     public static int PartTwo()
     {
-        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Day2.txt"))
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..//..//..//Input//Day2.txt"))
             .Split("\n", StringSplitOptions.RemoveEmptyEntries)
             .ToList();
 
