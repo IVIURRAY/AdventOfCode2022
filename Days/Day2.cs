@@ -55,10 +55,10 @@ public class Day2
 
     public static int PartOne()
 	{
-        
 
-        List<string> data = System.IO.File.ReadAllText(@"/Users/haydn/Documents/Code/AdventOfCode2022/Input/Day2.txt")
-			.Split("\n", StringSplitOptions.RemoveEmptyEntries)
+
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Day2.txt"))
+            .Split("\n", StringSplitOptions.RemoveEmptyEntries)
 			.ToList();
 
 		int score = 0;
@@ -119,7 +119,7 @@ public class Day2
 
     public static int PartTwo()
     {
-        List<string> data = System.IO.File.ReadAllText(@"/Users/haydn/Documents/Code/AdventOfCode2022/Input/Day2.txt")
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Day2.txt"))
             .Split("\n", StringSplitOptions.RemoveEmptyEntries)
             .ToList();
 

@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode2022;
+﻿using System.Reflection;
+
+namespace AdventOfCode2022;
 
 public class Day1
 {
@@ -9,14 +11,14 @@ public class Day1
 
     public static int PartOne()
     {
-        List<string> data = System.IO.File.ReadAllText(@"/Users/haydn/Documents/Code/AdventOfCode2022/Input/Day1.txt")
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\Input\\Day1.txt"))
             .Split("\n\n", StringSplitOptions.RemoveEmptyEntries)
             .ToList();
 
         int maxCalories = 0;
         foreach (string line in data)
         {
-            int elfsCalories = line.Split(new string[] { " ", "\n" }, StringSplitOptions.RemoveEmptyEntries)
+            int elfsCalories = line.Split(new string[] { " ", Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(x => int.Parse(x))
                 .ToList()
                 .Sum();
@@ -33,15 +35,15 @@ public class Day1
 
     public static int PartTwo()
     {
-
-        List<string> data = System.IO.File.ReadAllText(@"/Users/haydn/Documents/Code/AdventOfCode2022/Input/Day1.txt")
+        
+        List<string> data = System.IO.File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\..\\Input\\Day1.txt"))
             .Split("\n\n", StringSplitOptions.RemoveEmptyEntries)
             .ToList();
 
         List<int> elfsCalories = new List<int> { };
         foreach (string line in data)
         {
-            int elfCalories = line.Split(new string[] { " ", "\n" }, StringSplitOptions.RemoveEmptyEntries)
+            int elfCalories = line.Split(new string[] { " ", Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(x => int.Parse(x))
                 .ToList()
                 .Sum();
